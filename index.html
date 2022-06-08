@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Music Mixer checkpoint</title>
+</head>
+<body>
+	<header id="headLine">
+		<h1>drag and drop!</h1>
+		<p>Enjoy this music mixer player</p>
+	</header>
+
+	<section id="jazzMusic">
+		<!-- these are the draggable pieces -->
+		<div class="puzzle-pieces">
+			<!--img id="topRight" draggable src="images/topRight0.jpg" class="puzzle-image" alt="top right"-->
+            <img id="bottomLeft" draggable src="images/letterJ.svg" class="puzzle-image" alt="first position">
+            <!-- <svg id="J-letter" draggable xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.03 251.59"><defs><style>.cls-1{fill:#e37650;}</style></defs><path class="cls-1" d="M78.33,60.59c-9.81-1.93-8.87-11.17-8.87-11.17L62.22,48,53.77,91.21,61,92.62s2.62-8.91,12.42-7l62.83,12.31-11.91,60.8c-3.26,16.64-17.25,32.49-40.25,28C68.4,183.66,54.5,170.83,57.31,149c.22-1.22,1.34-6,5.17-5.28l1-5.22-25.45-5-1,5.22.09,0c.68.14,5.35,1.32,4.17,7.39h.1c-2,14.07.93,26.89,8.53,37.24A50.21,50.21,0,0,0,81,202.58c24.52,4.81,52.73-7.65,59.21-40.74L152.11,101,155,86.42,157,76Z"/></svg> -->
+			<!--img id="bottomLeft" draggable src="images/bottomLeft0.jpg" class="puzzle-image" alt="bottom left"-->
+            <!--img id="bottomLeft" draggable src="images/letA.jpg" class="puzzle-image" alt="second position"-->
+            <svg id="A-letter" draggable xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.4 145.39"><defs><style>.cls-1{fill:#91ad8f;}</style></defs><path class="cls-1" d="M110.52,120.46l-.49-3.23h0L94.47,15.28,75.19,11.5,23.53,98h0c-5.85,9.8-12.25,8.72-12.25,8.72L10,113.29l28.12,5.5,1.28-6.53c-7-1.37-5.38-7-4-10L47,80.93l34.41,6.74L83,112.61h0c.36,5.87-2.25,7.23-4.6,7.29l-3.48-.69-1.28,6.54,41.48,8.12,1.28-6.53c-3.66-.72-5.22-4.2-5.88-6.89ZM52.09,71.68,77.56,24.94,80.81,77.3Z"/></svg>
+			<!--img id="bottomRight" draggable src="images/bottomRight0.jpg" class="puzzle-image" alt="bottom right"-->
+            <img id="bottomLeft" draggable src="images/letZ.jpg" class="puzzle-image" alt="third position left">
+            <img id="bottomRight" draggable src="images/lettZ.jpg" class="puzzle-image" alt="fourth position">
+        
+
+		<!-- we want to drop the draggable pieces here -->
+		<div class="puzzle-board">
+            <img src="images/Visual.svg" alt="music-mixer-visual">
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
+	</section>
+
+	<footer>
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<img src="images/buttonZero.jpg" data-bgref="0" alt="thumbnail">
+			<img src="images/buttonOne.jpg" data-bgref="1" alt="thumbnail">
+	    	<img src="images/buttonTwo.jpg" data-bgref="2" alt="thumbnail">
+			<img src="images/buttonThree.jpg" data-bgref="3" alt="thumbnail">
+		</nav>
+	</footer>
+
+	<script src="script/main.js"></script>
+</body>
+</html>
